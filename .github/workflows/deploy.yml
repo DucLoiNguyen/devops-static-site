@@ -24,6 +24,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Lint HTML
+        run: npx --yes htmlhint index.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
